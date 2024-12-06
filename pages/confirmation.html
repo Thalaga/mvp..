@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation | Drop & Lock</title>
+  <link rel="stylesheet" href="../mycss/confirmation.css">
+  <script src="../JSFiles/Cornfimation.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Thank You for Booking with Drop & Lock!</h1>
+      <nav>
+        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="confirmation-message">
+      <h2>Booking Confirmed!</h2>
+      <p>We are excited to have you as a customer. Your luggage is safe with us. Here's a summary of your booking:</p>
+    </section>
+
+    <section id="details">
+      <!-- Booking details will be dynamically added here -->
+    </section>
+
+    <div class="actions">
+      <button onclick="downloadReceipt()" class="btn">Download Receipt</button>
+      <button onclick="shareOnWhatsApp()" class="btn">Share on WhatsApp</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Drop & Lock. All rights reserved.</p>
+    </div>
+  </footer>
+  <a href="https://wa.me/qr/H27KLHQ3BMT6G1" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Luggage Storage</title>
+  <link rel="stylesheet" href="../mycss/booking.css">
+  <script src="../JSFiles/Booking.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <button class="back-btn" onclick="window.location.href='services.html'">Back to Services</button>
+    <h1>Book Your Storage</h1>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <form action="payment.html" method="POST" id="bookingForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <label for="city">Select City:</label>
+        <select id="city" name="city" required>
+          <option value="CPT">Cape Town</option>
+          <option value="JHB">Johannesburg</option>
+          <option value="DBN">Durban</option>
+          <option value="PE">Port Elizabeth</option>
+        </select>
+
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="Saver">Saver</option>
+          <option value="Flexi">Flexi</option>
+        </select>
+
+        <label for="storage-duration">Storage Duration (hours/days):</label>
+        <input type="number" id="storage-duration" name="storage-duration" min="1" required placeholder="Enter duration in hours or days">
+
+        <label for="pickup-delivery">Pickup & Delivery (Optional):</label>
+        <input type="checkbox" id="pickup-delivery" name="pickup-delivery">
+
+        <label for="insurance">Insurance (Optional):</label>
+        <input type="checkbox" id="insurance" name="insurance">
+
+        <button type="button" class="btn" onclick="window.location.href='../pages/payment.html';">Continue to Payment</button>
+
+      </form>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p id="selected-plan"></p>
+      <p id="total-price"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Drop & Lock | All Rights Reserved.</p>
+  </footer>
+
+  <script src="../js/booking.js"></script>
+  <a href="https://wa.me/qr/H27KLHQ3BMT6G1" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
